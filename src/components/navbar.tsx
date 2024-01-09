@@ -12,9 +12,9 @@ export function NavBar() {
       const scrollThreshold = window.innerHeight / 2;
 
       if (currentScrollPos >= scrollThreshold) {
-        navbar.classList.add("hidden");
+        if (navbar) navbar.classList.add("hidden");
       } else {
-        navbar.classList.remove("hidden");
+        if (navbar) navbar.classList.remove("hidden");
       }
     };
 
