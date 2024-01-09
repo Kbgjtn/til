@@ -24,7 +24,7 @@ export function H2({ children }: Props) {
         aria-labelledby={slug}
         title={`Link to ${children}`}
       >
-        <span className="px-1 dark:text-white/30 hover:text-yellow-400 text-base font-normal">
+        <span className="px-1 dark:text-white/30 dark:hover:text-yellow-400 hover:text-green-400 text-base font-normal">
           #
         </span>
       </a>
