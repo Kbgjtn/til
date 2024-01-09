@@ -165,6 +165,20 @@
       @apply bg-[#595959];
     }
   }
+
+  ::-webkit-scrollbar {
+    @apply w-[6px];
+    @apply dark:bg-black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply dark:bg-white/30 bg-black/60;
+    @apply rounded-md;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply dark:bg-black;
+  }
 }
 
 @layer components {
