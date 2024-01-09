@@ -1,12 +1,10 @@
 import { listPost } from "@/lib/mdx";
 import { Image } from "@/components/image";
-import { FrontMatter } from "./blog/[slug]/page";
-
+import { PostCard } from "@/components/post-card";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 
 export default async function Home() {
-  const posts = await listPost();
+  const posts = await listPost({ limit: 4 });
 
   return (
     <div className="max-w-xl py-8 mx-auto min-h-screen">
@@ -20,46 +18,30 @@ export default async function Home() {
       </header>
       <section className="container h-screen w-full flex flex-col mx-auto max-w-4xl px-4 space-y-4">
         {posts.length > 0 ? (
-          posts.map((post, i) => (
-            <PostCard
-              {...{ ...post.frontmatter, slug: post.slug as string }}
-              key={i}
-            />
-          ))
+          posts.map(
+            (post, i) =>
+              i <= 2 && (
+                <PostCard
+                  {...{ ...post.frontmatter, slug: post.slug as string }}
+                  key={i}
+                />
+              ),
+          )
         ) : (
-          <p>no post</p>
+          <p className="text-center">
+            <span className="text-sm dark:text-white/40 mr-4">.:::.</span>
+            no post yet
+            <span className="text-sm dark:text-white/40 ml-4">.:::.</span>
+          </p>
         )}
-      </section>
-    </div>
-  );
-}
 
-function PostCard(meta: Awaited<FrontMatter & { slug: string }>) {
-  return (
-    <Link href={`/blog/${meta.slug}`} draggable="false">
-      <div
-        className="p-4 text-pretty mx-auto overflow-hidden w-full"
-        key={meta.slug}
-      >
-        <img
-          className={cn([
-            "rounded-md w-full h-auto object-contain ring-1 ring-black/10 dark:ring-0",
-          ])}
-          draggable="false"
-          title={meta.title}
-          src={meta.cover}
-          alt={meta.title}
-          width="0"
-          height="0"
-          sizes="100vw"
-        />
-        <div className=""></div>
-        <h3 className="mt-2">{meta.title}</h3>
-        <p className="text-ellipsis">
-          <span className="text-sm dark:text-white/40 mr-4">.:::.</span>
-          {meta.description.slice(0, 40)}
-        </p>
-      </div>
-    </Link>
+        <div className="h-8"></div>
+        <Link href="/blog">
+          <p>See list</p>
+        </Link>
+      </section>
+      <div className="h-16"></div>
+      <div className="h-16"></div>
+    </div>
   );
 }

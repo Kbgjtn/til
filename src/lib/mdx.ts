@@ -31,7 +31,13 @@ export async function getPost(filePath: string): Promise<Post<FrontMatter>> {
   };
 }
 
-export async function listPost(): Promise<Post<FrontMatter>[]> {
+type PostListProps = {
+  limit: number;
+};
+
+export async function listPost({
+  limit,
+}: PostListProps): Promise<Post<FrontMatter>[]> {
   const path = join(process.cwd(), "src", "content", "blog");
   const files = fs.readdirSync(path);
   const posts = await Promise.all(
@@ -53,7 +59,7 @@ export async function listPost(): Promise<Post<FrontMatter>[]> {
     }
   });
 
-  return posts;
+  return limit ? posts.slice(0, limit) : posts;
 
   // return posts;
 }

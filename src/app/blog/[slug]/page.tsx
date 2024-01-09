@@ -1,9 +1,10 @@
-import { getPost, listPost } from "@/lib/mdx";
 import MDXContent from "@/components/mdx-content";
 
-import type { MDXRemoteSerializeResult } from "next-mdx-remote";
-import { Metadata } from "next";
 import { Image } from "@/components/image";
+import { getPost, listPost } from "@/lib/mdx";
+
+import type { Metadata } from "next";
+import type { MDXRemoteSerializeResult } from "next-mdx-remote";
 
 type Props = {
   params: {
@@ -28,7 +29,7 @@ export type Post<T> = {
 };
 
 export async function generateStaticParams() {
-  const posts = await listPost();
+  const posts = await listPost({ limit: 10 });
 
   return posts.map((post) => ({
     slug: post.slug,
