@@ -1,0 +1,74 @@
+---
+title: "Vim Surround ✨"
+date: "2024-01-03"
+description: "Say goodbye to repetitive typing and hello to vim-surround, the ultimate tool for efficient text manipulation in Vim! ✨"
+cover: "/images/894kadsfkj12321kjl21lkjdsfksdfaweoifjewoaijoidfjgvaoids.png"
+---
+
+
+## Installation
+- Packer 
+	```lua
+   use("tpope/vim-surround")
+   ```
+
+- Lazy
+	```lua
+	"tpope/vim-surround"
+   ```
+	
+- Plug
+	```lua
+	Plug "tpope/vim-surround"
+   ```
+	
+You can check the document details here:
+**[vim-surround](https://github.com/tpope/vim-surround "vim-surround")**
+
+## Create Surround
+  -  `ysiw"` surround word with `"`
+      e.g. hello_world -> "hello_world"
+   - `ysiw'` surround word with `'`
+      e.g. hello_world -> "hello_world"
+   - `ysiw<em>` surround word with `<em></em>`
+      e.g. hello_world -> <em>hello_world</em>
+   - `ysiw)`  surround word with `()`
+      e.g. hello_world -> ( hello_world )
+   - `ysiw[`  surround word with `[]`
+      e.g. hello_world -> [ hello_world ]
+
+## Change Surround
+   - `cs"'` change `"` to `'`
+      e.g. "hello_world" -> 'hello_world'
+   - `cs"<em>` change `"` to `<em></em>`
+      e.g. "hello_world" -> <em>hello_world</em>
+   - `cs)"` change `)` to `"`
+      e.g. ( hello_world ) -> "hello_world"
+   - `cs)[` change `)` to `[]`
+      e.g. ( hello_world ) -> [ hello_world ] 
+
+## Delete Surround
+   - `ds"` delete
+      e.g. "hello_world" -> hello_world
+   - `dst` delete (html tag)
+      e.g. <em>hello_world</em> -> hello_world
+   - `ds)` delete `)`
+      e.g. ( hello_world ) -> hello_world
+   - `ds)[` delete `)`
+      e.g. ( hello_world ) -> hello_world
+
+## Visual Mode
+   - `S"` surround visual selection with `"`
+      e.g. hello_world -> "hello_world"
+   - `S<em>` surround visual selection with `<em></em>`
+      e.g. hello_world -> <em>hello_world</em>
+   - `S)` surround visual selection with `()`
+      e.g. hello_world -> (hello_world)
+   - `S[` surround visual selection with `[]`
+      e.g. hello_world -> [hello_world] 
+
+## Function
+   - `ysWfprint<CR>` surround word with `print()`
+      e.g. hello_world -> print(hello_world)
+   - `ysWFprint<CR>` surround WORD with `print()`
+      e.g. hello_world -> print( hello_world )

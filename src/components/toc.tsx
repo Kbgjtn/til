@@ -12,7 +12,10 @@ export function TOC({ summary = "Contents", items }: TOCProps) {
       <ul>
         {items.map((item, i) => (
           <li key={i} className="ml-4">
-            <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`}>
+            <Link
+              href={`#${item.toLowerCase().replace(/ /g, "-")}`}
+              draggable="false"
+            >
               {item}
             </Link>
           </li>

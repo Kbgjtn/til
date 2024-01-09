@@ -143,11 +143,6 @@
       @apply text-[1.2rem];
       @apply rounded-md px-2 py-[2px];
 
-      &::before,
-      &::after {
-        @apply content-['`'];
-      }
-
       &::before {
         @apply mr-[-2px];
       }
