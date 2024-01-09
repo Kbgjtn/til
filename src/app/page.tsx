@@ -1,10 +1,9 @@
 import { listPost } from "@/lib/mdx";
-import { Logo } from "@/components/icons";
 import { Image } from "@/components/image";
 import { FrontMatter } from "./blog/[slug]/page";
 
 import Link from "next/link";
-import NextImage from "next/image";
+import { cn } from "@/lib/utils";
 
 export default async function Home() {
   const posts = await listPost();
@@ -43,7 +42,9 @@ function PostCard(meta: Awaited<FrontMatter & { slug: string }>) {
         key={meta.slug}
       >
         <img
-          className="rounded-md w-full h-auto object-contain ring-1 ring-black/10 dark:ring-0"
+          className={cn([
+            "rounded-md w-full h-auto object-contain ring-1 ring-black/10 dark:ring-0",
+          ])}
           draggable="false"
           title={meta.title}
           src={meta.cover}

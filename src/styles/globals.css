@@ -33,14 +33,14 @@
 
   h3 {
     @apply text-4xl;
-    @apply max-md:text-2xl;
+    @apply max-md:text-xl;
   }
 
   h4,
   h5,
   h6 {
     @apply text-3xl;
-    @apply max-md:text-xl;
+    @apply max-md:text-lg;
   }
 
   a {
@@ -53,6 +53,13 @@
 
   blockquote > em {
     @apply pr-6;
+  }
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  summary {
+    @apply text-[1.5rem];
   }
 
   strong {
@@ -68,7 +75,7 @@
     @apply text-pretty;
     @apply mb-2;
     @apply font-sans;
-    @apply p-1 px-2 bg-black/10 dark:bg-[#101010] rounded-sm;
+    @apply p-1 px-2 bg-black/10 dark:bg-[#101010] rounded-md;
   }
 
   hr {
@@ -167,7 +174,7 @@
   }
 
   ::-webkit-scrollbar {
-    @apply w-[6px];
+    @apply w-[6px] max-md:w-[2px];
     @apply dark:bg-black;
   }
 

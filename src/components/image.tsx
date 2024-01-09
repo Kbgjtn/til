@@ -29,7 +29,7 @@ export function Image({
       />
       <NextImage
         onContextMenu={(e) => e.preventDefault()}
-        className={"h-auto w-full object-center rounded-md " + className}
+        className={cn(["h-auto w-full object-center rounded-md", className])}
         src={src}
         draggable="false"
         width="0"
