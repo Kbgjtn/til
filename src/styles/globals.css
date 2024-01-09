@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    @apply dark:bg-white/30;
+    @apply dark:text-white/90;
+  }
+
+  body {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium mb-1 mt-12;
+  }
+
+  h1 {
+    @apply text-7xl mt-0;
+    @apply max-md:text-3xl;
+  }
+
+  h2 {
+    @apply text-5xl;
+    @apply max-md:text-2xl;
+  }
+
+  h3 {
+    @apply text-4xl;
+    @apply max-md:text-2xl;
+  }
+
+  h4,
+  h5,
+  h6 {
+    @apply text-3xl;
+    @apply max-md:text-xl;
+  }
+
+  a {
+  }
+
+  blockquote {
+    @apply p-3 my-4;
+    @apply dark:bg-transparent;
+  }
+
+  blockquote > em {
+    @apply pr-6;
+  }
+
+  strong {
+    @apply font-bold;
+  }
+
+  time {
+    @apply text-pretty;
+    @apply text-[1.2rem];
+    @apply max-md:text-xs;
+    @apply leading-relaxed;
+    @apply dark:text-white/60;
+    @apply text-pretty;
+    @apply mb-2;
+    @apply font-sans;
+    @apply p-1 px-2 bg-black/10 dark:bg-[#101010] rounded-sm;
+  }
+
+  hr {
+    @apply my-4;
+    @apply border-2 border-white/40 dark:border-white/10;
+    @apply rounded-sm;
+    @apply after:ml-3;
+  }
+
+  p {
+    @apply text-[1.5rem];
+    @apply leading-relaxed;
+    @apply dark:text-white/80;
+    @apply text-pretty;
+    @apply max-md:text-[1.4rem];
+
+    & + p {
+      @apply mt-4;
+      @apply md:mt-5;
+    }
+  }
+
+  hr {
+    @apply my-8 border-none;
+    @apply md:my-12;
+
+    & + * {
+      @apply mt-0;
+    }
+
+    & + h2 {
+      @apply -mt-2;
+    }
+
+    & + h3 {
+      @apply -mt-2;
+    }
+  }
+
+  ul,
+  ol {
+    @apply mb-6 ml-7 mt-6;
+    @apply md:ml-9;
+
+    li {
+      @apply relative leading-relaxed;
+      @apply text-[1.5rem];
+
+      & + li {
+        @apply mt-2;
+      }
+
+      &::before {
+        @apply absolute -left-7 top-[12px] h-3 w-3 rounded-[4px] content-[''];
+        @apply md:-left-9;
+        @apply bg-[#595959];
+      }
+    }
+  }
+
+  :not(pre, .mdx-inline-highlight) {
+    > code {
+      @apply font-sans text-[#CCEA8D] dark:text-[#FF5F5D];
+      @apply dark:bg-[#101010] bg-black/80;
+      @apply text-[1.2rem];
+      @apply rounded-md px-2 py-[2px];
+
+      &::before,
+      &::after {
+        @apply content-['`'];
+      }
+
+      &::before {
+        @apply mr-[-2px];
+      }
+
+      &::after {
+        @apply ml-[-2px];
+      }
+    }
+  }
+
+  pre {
+    @apply my-6;
+    @apply rounded-md;
+    @apply text-[1.5rem];
+  }
+
+  blockquote {
+    @apply relative my-6 py-1 pl-6;
+
+    &::before {
+      @apply absolute bottom-0 left-0 top-0 w-1 rounded-full content-[''];
+      @apply bg-[#595959];
+    }
+  }
+}
+
+@layer components {
+  .mdx-image-sensitive {
+    @apply mx-auto my-4 max-w-fit;
+    @apply md:my-6;
+
+    .mdx-image {
+      @apply m-0;
+    }
+  }
+
+  .mdx-image {
+    @apply mx-auto my-4 max-w-fit;
+    @apply md:my-6 xl:-mx-10;
+  }
+
+  .mdx-heading {
+    @apply flex items-center gap-4 font-extrabold;
+
+    svg {
+      @apply text-black h-4 w-4;
+      @apply dark:text-current;
+    }
+
+    span {
+      @apply relative;
+
+      &::before {
+        @apply absolute inset-0 -inset-x-2 z-[-1] origin-left scale-x-0 content-[''];
+      }
+    }
+
+    &:first-child {
+      @apply mt-0;
+    }
+
+    &__anchor {
+      @apply border-white dark:bg-white/15 bg-black/30 hidden cursor-pointer items-center justify-center rounded-lg border opacity-0;
+      @apply lg:flex;
+      @apply lg:focus:opacity-100;
+      @apply lg:hover:text-yellow-400;
+      @apply dark:border-white/15;
+      @apply lg:dark:hover:text-yellow-400;
+    }
+
+    &--h2 {
+      @apply mb-4 mt-6 scroll-mt-[86px] text-2xl;
+      @apply md:mb-5 md:mt-7 md:text-3xl lg:-ml-12;
+
+      .mdx-heading__anchor {
+        @apply h-8 w-8 text-current;
+      }
+    }
+
+    &--h3 {
+      @apply mb-4 mt-5 scroll-mt-[86px] text-[1.2rem];
+      @apply md:mb-5 md:mt-6 md:text-[1.35rem] lg:-ml-11;
+
+      .mdx-heading__anchor {
+        @apply h-7 w-7;
+      }
+    }
+  }
+
+  .mdx-table {
+    @apply border-none mb-8 mt-6 w-full overflow-x-auto rounded-lg border text-base;
+
+    table {
+      @apply w-full;
+
+      thead {
+        tr {
+          @apply border-black/30 border-b;
+          @apply dark:border-white/10;
+
+          th {
+            @apply p-2 px-4 text-left;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            @apply p-2 px-4 align-top;
+          }
+        }
+      }
+
+      th,
+      td {
+        &:first-child {
+          @apply sticky left-0 z-10 w-[120px] min-w-[120px] bg-white sm:w-[200px] sm:min-w-[200px];
+          @apply bg-white/50 dark:bg-white/10;
+        }
+      }
+    }
+  }
+}
