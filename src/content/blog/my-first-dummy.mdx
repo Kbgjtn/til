@@ -5,6 +5,9 @@ description: "Prisma and PostgreSQL are powerful tools that enable developers to
 cover: "/images/tortuga.png"
 ---
 
+
+<TOC items={[ "Prisma", "PostgreSQL", "Installation and Setup", "Schema Definition", "Generate Prisma Client", "CRUD Operations" ]} />
+
 ## Prisma
 
 **Prisma** and **PostgreSQL** are a powerful pair for modern data storage and manipulation.
@@ -19,7 +22,7 @@ Prisma and PostgreSQL work together to create a powerful and flexible data manag
 
 If you are looking for a reliable and scalable data management solution, Prisma and PostgreSQL are a great choice. They will make your development journey easier and your data management more efficient.
 
-### Installation and Setup
+## Installation and Setup
 
 -  pnpm
 
@@ -56,7 +59,7 @@ DATABASE_URL_WITH_SCHEMA = ${DATABASE_URL}?schema=public
 
 <br />
 
-### Schema Definition
+## Schema Definition
 
 -  Define your data model in `prisma/schema.prisma` using Prisma's schema language.
 -  Example schema definition:
@@ -86,7 +89,7 @@ model Post {
 
 <br />
 <br />
-### Generate Prisma Client
+## Generate Prisma Client
 
 Run `npx prisma generate` to generate the Prisma
 Client. - The generated Prisma Client provides a type-safe and
@@ -123,7 +126,7 @@ pnpm i @prisma/client
 npx prisma generate
 ```
 
-### CRUD Operations
+## CRUD Operations
 
 Example CRUD operations:
 
