@@ -50,7 +50,7 @@ function PostCard(meta: Awaited<FrontMatter & { slug: string }>) {
           alt={meta.title}
           width="0"
           height="0"
-          size="100vw"
+          sizes="100vw"
         />
         <div className=""></div>
         <h3 className="mt-2">{meta.title}</h3>
