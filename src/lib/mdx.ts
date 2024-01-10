@@ -12,7 +12,7 @@ export async function getPost(filePath: string): Promise<Post<FrontMatter>> {
     "src",
     "content",
     "blog",
-    filePath.replace(".mdx", "") + ".mdx",
+    filePath.replace(".md", "") + ".md",
   );
   const raws = fs.readFileSync(path, "utf-8");
   const serialized = await serialize(raws, {
@@ -45,7 +45,7 @@ export async function listPost({
       const post = await getPost(file);
       return {
         ...post,
-        slug: file.replace(".mdx", ""),
+        slug: file.replace(".md", ""),
       };
     }),
   );

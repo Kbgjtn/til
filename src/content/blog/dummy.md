@@ -5,16 +5,16 @@ description: "This is my first blog post"
 cover: "/images/92304hjklsdfjaskldfj82390412jlk3jsdaf.png"
 ---
 
-<TOC 
+<TOC
    items={[
-         "Headings Tag", 
-         "Horizontal Rules", 
+         "Headings Tag",
+         "Horizontal Rules",
          "Typographic Replacements",
          "Emphasis", "Blockquotes",
-         "Lists", "Code", "Image", 
+         "Lists", "Code", "Image",
          "Table", "Task",
-
-   ]} />
+    ]}
+/>
 
 <hr />
 
@@ -74,19 +74,20 @@ _This is italic text_
 
 ## Lists
 
--  Create a list by starting a line with `+`, `-`, or `*`
--  Sub-lists are made by indenting 2 spaces:
-   -  Marker character change forces new list start:
-      -  Ac tristique libero volutpat at
-      *  Facilisis in pretium nisl aliquet
-      -  Nulla volutpat aliquam velit
--  Very easy!
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    - Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
 
 ## Code
 
 Inline `code`
 
 Indented code
+
 ```go
 package main
 
@@ -105,9 +106,10 @@ Sample text here...
 ```
 
 ## Image
+
 <Image src="/images/5c78601b3573afc72b33c7f6abd1401cd87f6cd7.jpeg" alt="Image" />
 1. Blurred Image
-   
+
 <img
 className="rounded-md select-none border-2 dark:border-0 border-black"
 priority="false"
@@ -120,7 +122,6 @@ src="/images/894kadsfkj12321kjl21lkjdsfksdfaweoifjewoaijoidfjgvaoids.png" alt="I
 
 ---
 
-
 ## Table
 
 | Branch  | Commit           |
@@ -129,5 +130,6 @@ src="/images/894kadsfkj12321kjl21lkjdsfksdfaweoifjewoaijoidfjgvaoids.png" alt="I
 | staging | fedcba9876543210 |
 
 ## Task
+
 - [ ] not assigned
 - [x] assigned and finished
