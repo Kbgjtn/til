@@ -3,6 +3,7 @@
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { TOC } from "./toc";
 import { Image } from "./image";
+import { GIF } from "./gif";
 import { H2, H3 } from "./headings";
 import { Table } from "./table";
 
@@ -12,6 +13,7 @@ type Props = {
 
 const components = {
   TOC,
+  GIF,
   Image,
   h1: H2,
   h2: H2,
