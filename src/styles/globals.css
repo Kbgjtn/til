@@ -58,6 +58,7 @@
   details > summary::-webkit-details-marker {
     display: none;
   }
+
   summary {
     @apply text-[1.5rem];
   }
@@ -129,7 +130,7 @@
       }
 
       &::before {
-        @apply absolute -left-7 top-[12px] h-3 w-3 rounded-[4px] content-[''];
+        @apply absolute -left-7 top-4 -inset-y-6 h-3 w-3 rounded-[4px] content-[''];
         @apply md:-left-9;
         @apply bg-[#595959];
       }
@@ -138,7 +139,9 @@
 
   :not(pre, .mdx-inline-highlight) {
     > code {
-      @apply font-sans text-[#CCEA8D] dark:text-[#FF5F5D];
+      /* @apply font-sans text-[#CCEA8D] dark:text-[#FF5F5D];  */
+      @apply font-semibold text-[#CCEA8D] dark:text-[#FFC436];
+
       @apply dark:bg-[#101010] bg-black/80;
       @apply text-[1.2rem];
       @apply rounded-md px-2 py-[2px];

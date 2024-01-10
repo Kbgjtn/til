@@ -11,7 +11,8 @@ cover: "/images/92304hjklsdfjaskldfj82390412jlk3jsdaf.png"
          "Horizontal Rules", 
          "Typographic Replacements",
          "Emphasis", "Blockquotes",
-         "Lists", "Code", "Table"
+         "Lists", "Code", "Image", 
+         "Table", "Task",
 
    ]} />
 
@@ -103,9 +104,30 @@ Block code "fences"
 Sample text here...
 ```
 
+## Image
+<Image src="/images/5c78601b3573afc72b33c7f6abd1401cd87f6cd7.jpeg" alt="Image" />
+1. Blurred Image
+   
+<img
+className="rounded-md select-none border-2 dark:border-0 border-black"
+priority="false"
+draggable="false"
+src="/images/894kadsfkj12321kjl21lkjdsfksdfaweoifjewoaijoidfjgvaoids.png" alt="Image" />
+2. Normal Image
+
+<img src="/images/coocobolo.png" alt="Image" title="coocobolo.png" />
+3. Image with title
+
+---
+
+
 ## Table
 
 | Branch  | Commit           |
 | ------- | ---------------- |
 | main    | 0123456789abcdef |
 | staging | fedcba9876543210 |
+
+## Task
+- [ ] not assigned
+- [x] assigned and finished
