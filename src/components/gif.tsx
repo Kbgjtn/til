@@ -5,7 +5,7 @@ type GIFProps = {
   alt: string;
 };
 
-export function GIF({ src, alt, width, height }: GIFProps) {
+export function GIF({ src, alt }: GIFProps) {
   return (
     <div className="my-2 flex w-full items-start justify-start h-auto">
       <Image
