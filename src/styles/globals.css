@@ -139,7 +139,7 @@
 
   :not(pre, .mdx-inline-highlight) {
     > code {
-      @apply font-medium text-black/80 dark:text-[#FFC436];
+      @apply font-medium text-black/80 dark:text-white/65;
 
       @apply dark:bg-[#101010] bg-black/20;
       @apply text-[1.2rem] text-center;
