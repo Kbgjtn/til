@@ -139,12 +139,11 @@
 
   :not(pre, .mdx-inline-highlight) {
     > code {
-      /* @apply font-sans text-[#CCEA8D] dark:text-[#FF5F5D];  */
-      @apply font-semibold text-[#CCEA8D] dark:text-[#FFC436];
+      @apply font-medium text-black/80 dark:text-[#FFC436];
 
-      @apply dark:bg-[#101010] bg-black/80;
-      @apply text-[1.2rem];
-      @apply rounded-md px-2 py-[2px];
+      @apply dark:bg-[#101010] bg-black/20;
+      @apply text-[1.2rem] text-center;
+      @apply rounded-md px-2 py-[3px];
 
       &::before {
         @apply mr-[-2px];

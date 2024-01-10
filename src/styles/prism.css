@@ -85,7 +85,7 @@ pre.language-bash {
 .token.char,
 .token.selector,
 .token.string {
-  color: #ffd05e;
+  color: #989898;
 }
 .language-css .token.string,
 .token.entity,
