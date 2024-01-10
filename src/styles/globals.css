@@ -142,7 +142,7 @@
       @apply font-medium text-black/80 dark:text-white/65;
 
       @apply dark:bg-[#101010] bg-black/20;
-      @apply text-[1.2rem] text-center;
+      @apply text-[1.25rem] text-center;
       @apply rounded-md px-2 py-[3px];
 
       &::before {
