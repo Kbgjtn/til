@@ -38,27 +38,4 @@ You may or may not agree with the above, but I've always thought about it and th
 | Headset   | Cooler Master MH-752                          |
 | Desk Mat  | no-brand                                      |
 
-## Stack
-
-| Item          | Details                                     |
-| --------------| ------------------------------------------- |
-| Vim           | I love vim a lot, improve my focus          |
-| VSCode        | I used VSCode for speed run HAHAHA          |
-| Cascadia Code | It's fun for coding font                    |
-| Wezterm       | I like it because it's customizable         |
-| Fig           | Absolutely, fig!                            |
-| Lua           | Lua is very nice to help my plugins on vim  |
-| Oh My Zsh     | I don't know anyone used it                 |
-
-## App
-
-| Item        | Details                                                  |
-| ------------| -------------------------------------------------------- |
-| Excalidraw  | Best sketching board, make some quick note for the class |
-| Figma       | OFC!                                                     |
-| Hyper       | I like it because it is integrated with fig              |
-| Notion      | Help me a lot!                                           |
-| Lua         | Lua is good to help coding in vim                        |
-| Oh My Zsh   | I don't know                                             |
-
 ---
