@@ -20,6 +20,7 @@ export async function getPost(filePath: string): Promise<Post<FrontMatter>> {
     mdxOptions: {
       remarkPlugins: [remarkGfm],
       rehypePlugins: [rehypePrism],
+      format: "mdx",
     },
   });
 

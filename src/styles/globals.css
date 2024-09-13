@@ -44,6 +44,7 @@
   }
 
   a {
+    @apply text-neutral-200 hover:text-yellow-300;
   }
 
   blockquote {

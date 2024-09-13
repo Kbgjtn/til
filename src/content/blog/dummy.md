@@ -1,19 +1,19 @@
 ---
-title: "My First Blog"
+title: "Markdown Components"
 date: "2021-10-20"
-description: "This is my first blog post"
+description: "markdown components"
 cover: "/images/92304hjklsdfjaskldfj82390412jlk3jsdaf.png"
 ---
 
 <TOC
-   items={[
-         "Headings Tag",
-         "Horizontal Rules",
-         "Typographic Replacements",
-         "Emphasis", "Blockquotes",
-         "Lists", "Code", "Image",
-         "Table", "Task",
-    ]}
+items={[
+"Headings Tag",
+"Horizontal Rules",
+"Typographic Replacements",
+"Emphasis", "Blockquotes",
+"Lists", "Code", "Image",
+"Table", "Task",
+]}
 />
 
 <hr />
@@ -39,6 +39,28 @@ cover: "/images/92304hjklsdfjaskldfj82390412jlk3jsdaf.png"
 ---
 
 ---
+
+# Pluto
+
+**Pluto** (minor-planet designation: _134340 Pluto_)
+is a
+[dwarf planet](https://en.wikipedia.org/wiki/Dwarf_planet)
+in the
+[Kuiper belt](https://en.wikipedia.org/wiki/Kuiper_belt).
+
+## History
+
+In the 1840s,
+[Urbain Le Verrier](https://wikipedia.org/wiki/Urbain_Le_Verrier)
+used Newtonian mechanics to predict the position of the
+then-undiscovered planet
+[Neptune](https://wikipedia.org/wiki/Neptune)
+after analyzing perturbations in the orbit of
+[Uranus](https://wikipedia.org/wiki/Uranus).
+
+---
+
+Just a link: www.nasa.gov.
 
 ## Typographic Replacements
 
@@ -114,8 +136,7 @@ Sample text here...
 className="rounded-md select-none border-2 dark:border-0 border-black"
 priority="false"
 draggable="false"
-src="/images/894kadsfkj12321kjl21lkjdsfksdfaweoifjewoaijoidfjgvaoids.png" alt="Image" />
-2. Normal Image
+src="/images/894kadsfkj12321kjl21lkjdsfksdfaweoifjewoaijoidfjgvaoids.png" alt="Image" /> 2. Normal Image
 
 <img src="/images/coocobolo.png" alt="Image" title="coocobolo.png" />
 3. Image with title

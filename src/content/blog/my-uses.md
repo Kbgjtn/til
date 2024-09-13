@@ -11,18 +11,16 @@ cover: "/images/8392hdsfjnnnlsdnmoqweoiASDkwejdfwefoi23oi.png"
 
 I want to share about the specific software or hardware I use. This is not a static page, it is a living document with everything I am currently using. I use my room as a work from home space where I can complete most of my coursework or other projects.
 
-
 > **_'If a Cluttered Desk Is a Sign of a Cluttered Mind, We Can’t Help Wondering What an Empty Desk Indicates'_** - can't find a solid citation
 
 You may or may not agree with the above, but I've always thought about it and thought about it, because I'm not one to clean my desk or other equipment every day, even though I would use it. LOLLL! 😁
 
 ---
 
-
 ## Setup
 
 | Item       | Details                                     |
-| -----------| ------------------------------------------- |
+| ---------- | ------------------------------------------- |
 | Monitor    | Mi 2K Gaming Monitor 27"                    |
 | Screen-bar | Mijia Screen Hanging Light                  |
 | OS         | Ubuntu 22.04.2 LTS, Ventura 13 & Windows 11 |
@@ -32,10 +30,10 @@ You may or may not agree with the above, but I've always thought about it and th
 
 ## Peripheral
 
-| Item      | Details                                       |
-| ----------| --------------------------------------------- |
-| Keyboard  | PC75B Plus Black                              |
-| Headset   | Cooler Master MH-752                          |
-| Desk Mat  | no-brand                                      |
+| Item     | Details              |
+| -------- | -------------------- |
+| Keyboard | PC75B Plus Black     |
+| Headset  | Cooler Master MH-752 |
+| Desk Mat | no-brand             |
 
 ---
