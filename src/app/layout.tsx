@@ -5,6 +5,8 @@ import { Ubuntu } from "next/font/google";
 import type { Metadata } from "next";
 import { NavBar } from "@/components/navbar";
 
+import { Analytics } from "@vercel/analytics/react";
+
 const sans = Ubuntu({
   subsets: ["latin"],
   display: "swap",
@@ -26,6 +28,7 @@ export default function RootLayout({ children }: Props) {
           " bg-gray-100 text-gray-900 leading-normal dark:bg-black dark:text-white font-current"
         }
       >
+        <Analytics />
         <NavBar />
         <main>{children}</main>
       </body>
