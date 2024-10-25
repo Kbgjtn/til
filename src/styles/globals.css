@@ -66,6 +66,7 @@
 
   strong {
     @apply font-bold;
+    @apply dark:text-white/90;
   }
 
   time {
@@ -88,7 +89,7 @@
   }
 
   p {
-    @apply text-[1.5rem];
+    @apply text-[1.25rem];
     @apply leading-relaxed;
     @apply dark:text-white/80;
     @apply text-pretty;
