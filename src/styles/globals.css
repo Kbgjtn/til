@@ -125,7 +125,7 @@
 
     li {
       @apply relative leading-relaxed;
-      @apply text-[1.5rem];
+      @apply text-[1.275rem];
 
       & + li {
         @apply mt-2;
