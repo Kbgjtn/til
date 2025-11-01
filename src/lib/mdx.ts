@@ -41,6 +41,7 @@ export async function listPost({
 }: PostListProps): Promise<Post<FrontMatter>[]> {
   const path = join(process.cwd(), "src", "content", "blog");
   const files = fs.readdirSync(path);
+
   const posts = await Promise.all(
     files.map(async (file) => {
       const post = await getPost(file);

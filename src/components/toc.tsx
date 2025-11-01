@@ -7,7 +7,7 @@ type TOCProps = {
 
 export function TOC({ summary = "Contents", items }: TOCProps) {
   return (
-    <details className="select-none ml-6">
+    <details className="select-none cursor-pointer ml-6">
       <summary>{summary}</summary>
       <ul>
         {items.map((item, i) => (

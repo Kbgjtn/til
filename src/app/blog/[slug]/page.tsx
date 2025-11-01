@@ -51,7 +51,7 @@ export default async function Page({ params }: Props) {
       <article>
         <header>
           <div className="h-16"></div>
-          <time>
+          <time className="px-3">
             {new Date(frontmatter.date).toLocaleDateString("en-US", {
               year: "numeric",
               month: "long",
