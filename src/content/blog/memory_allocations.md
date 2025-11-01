@@ -2,7 +2,7 @@
 title: "Memory Allocations"
 date: "2025-02-25"
 description: "Let's dive deep into heap allocation!"
-cover: "/images/asdfewutfw482HFnvwe.jpg"
+cover: "/images/0126e11f30520dff.jpg"
 ---
 
 <TOC
@@ -45,7 +45,6 @@ int main () {
 ## Stack vs Heap: The Showdown
 
 - **Stack**:
-
   - Automatic--variables die when the function ends (e.g., `int x = 69;`).
   - Fast--pre-allocated, no manual cleanup needed.
   - Limited size--big stuff (arrays, structs) can overflow it.
@@ -58,7 +57,6 @@ void func() {
 ```
 
 - **Heap**:
-
   - Manual--you control its life with `new` and `delete`.
   - Slower--allocation takes time, fragmented memory.
   - Huge--limited by system RAM, not a tiny stack cap.
@@ -90,13 +88,11 @@ int main() {
 ## When Should You Use It?
 
 - **Heap**:
-
   - Data needs to outlive its scope (e.g., return from a function).
   - Size is big or unknown (e.g., user-defined array length).
   - You're building dynamic structures (linked lists, etc.).
 
 - **Stack**:
-
   - Small, short-lived stuff (e.g., `int x` in a loop)
   - No need for manual cleanup--stack's automatic.
 

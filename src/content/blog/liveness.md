@@ -2,7 +2,7 @@
 title: "Deadlock, Livelock, and Starvation"
 date: "2024-10-26"
 description: "The hack is lock in computing"
-cover: "/images/liveness.jpg"
+cover: "/images/455944df6c5c1f31.jpg"
 ---
 
 <TOC

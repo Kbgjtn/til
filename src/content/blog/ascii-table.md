@@ -2,7 +2,7 @@
 title: "ASCII Table"
 date: "2024-10-18"
 description: "ASCII Table Set"
-cover: "/images/ascii-thumbnail.jpg"
+cover: "/images/96419bfbe25c7599.jpg"
 ---
 
 <TOC

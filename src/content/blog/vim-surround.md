@@ -2,7 +2,7 @@
 title: "Vim Surround ✨"
 date: "2024-01-03"
 description: "Say goodbye to repetitive typing and hello to vim-surround, the ultimate tool for efficient text manipulation in Vim! ✨"
-cover: "/images/894kadsfkj12321kjl21lkjdsfksdfaweoifjewoaijoidfjgvaoids.png"
+cover: "/images/49d9d1ecd728713e.jpg"
 ---
 
 <TOC

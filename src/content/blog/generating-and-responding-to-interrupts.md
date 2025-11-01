@@ -2,7 +2,7 @@
 title: "Generating and Responding to Interupts"
 date: "2025-02-10"
 description: "Learning how the processes are interrupt"
-cover: "/images/icon_floating.png"
+cover: "/images/111274cda3aef254.jpg"
 ---
 
 Interrupts area signals sent to a processor by a process or a device which require its urgently required to look at something else.
@@ -94,12 +94,10 @@ Interrupts is there to enable a processor to respond to critical events, it'll e
 ### Responding to an Interrupt
 
 - To handle interrupts:
-
   - At the end of the FDE cycle, the CPU checking for an interrupt, it's either checking the Control Bus or waiting instruction from the OS if it's a software interrupt, this is happen at the end cycles.
   - If there's one: the **priority** of the interrupt is checked.
   - If it's NOT higher than the current process, the current process is finished.
   - If it's higher than the current process, in which case, the CPU will switch to execute the **relevant ISR**. It will:
-
     - There is a different ISR for every interrupt it'll find relevant one
     - Store the contents of the current registers in a stack, this step is so so IMPORTANT if you want to resume the process of fact to pause it, switching the handle interrupt, then you wanna be able to go back whatever you were doing before.
     - Change the PC to now point towards the relevant ISR
