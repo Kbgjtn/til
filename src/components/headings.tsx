@@ -8,6 +8,19 @@ type Props = DetailedHTMLProps<
   HTMLHeadingElement
 >;
 
+export function P({
+  children,
+}: DetailedHTMLProps<
+  HTMLAttributes<HTMLParagraphElement>,
+  HTMLParagraphElement
+>) {
+  return (
+    <p className="text-wrap break-normal hyphens-none break-before-all">
+      {children}
+    </p>
+  );
+}
+
 export function H2({ children }: Props) {
   const slug = getSlug(children);
 
@@ -24,7 +37,7 @@ export function H2({ children }: Props) {
         aria-labelledby={slug}
         title={`Link to ${children}`}
       >
-        <span className="px-1 dark:text-white/30 dark:hover:text-yellow-400 hover:text-green-400 text-base font-normal">
+        <span className="px-1 text-black dark:text-white/30 dark:hover:text-yellow-400 hover:text-green-400 text-base font-normal">
           #
         </span>
       </a>
@@ -48,7 +61,7 @@ export function H3({ children }: Props) {
         className={clsx("mdx-heading__anchor group-hover:opacity-100")}
         aria-labelledby={slug}
       >
-        <span className="px-1 dark:text-white/30 hover:text-yellow-400 text-base font-normal">
+        <span className="px-1 text-black dark:text-white/30 hover:text-yellow-400 text-base font-normal">
           #
         </span>
       </a>
