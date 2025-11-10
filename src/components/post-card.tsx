@@ -14,7 +14,7 @@ export function PostCard(meta: Awaited<FrontMatter & { slug: string }>) {
           <img
             className={cn([
               "w-full h-40 object-cover rounded-md mb-4",
-              "group-hover:brightness-95",
+              "group-hover:brightness-90",
             ])}
             draggable="false"
             title={meta.title}
@@ -24,7 +24,7 @@ export function PostCard(meta: Awaited<FrontMatter & { slug: string }>) {
             height="0"
           />
         </div>
-        <p className="mt-2 font-semibold group-hover:text-yellow-300">
+        <p className="mt-2 font-semibold text-black/60 dark:text-white/80 group-hover:text-black dark:group-hover:text-white">
           {meta.title}
         </p>
         <span className="text-ellipsis text-sm dark:text-white">

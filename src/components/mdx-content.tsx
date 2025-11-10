@@ -2,9 +2,9 @@
 
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { TOC } from "./toc";
-import { Image } from "./image";
+import { Image, Span } from "./image";
 import { GIF } from "./gif";
-import { H2, H3 } from "./headings";
+import { H2, H3, P } from "./headings";
 import { Table } from "./table";
 
 type Props = {
@@ -14,7 +14,9 @@ type Props = {
 const components = {
   TOC,
   GIF,
+  Span,
   Image,
+  p: P,
   h1: H2,
   h2: H2,
   h3: H3,
