@@ -4,6 +4,10 @@ import React from "react";
 import NextImage, { ImageProps } from "next/image";
 import { cn } from "@/lib/utils";
 
+export function Span() {
+  return <span className="inline-block w-4 md:w-8" />;
+}
+
 export function Image({
   src,
   className,
