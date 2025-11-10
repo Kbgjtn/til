@@ -10,36 +10,37 @@ export default async function Page() {
       <div className="h-16"></div>
       <div className="h-16"></div>
       <div className="h-16"></div>
+      <div className="flex flex-col mx-4 lg:mx-0">
+        <div>
+          <h3>Me Thought Space</h3>
+          <div className="max-w-xl">
+            <span className="text-pretty dark:text-white/70 indent-8">
+              A place where ideas roam free, and words come to life. Here, I
+              share everything from reflections on daily life to the projects
+              I’m working on. It’s messy, it’s real, and it’s constantly
+              evolving, just like my desk. Grab a coffee, make yourself
+              comfortable, and dive into the randomness. There's always
+              something new to explore!
+            </span>
+          </div>
 
-      <div>
-        <h3>Me Thought Space</h3>
-        <div className="max-w-xl">
-          <span className="text-pretty dark:text-white/70 indent-8">
-            A place where ideas roam free, and words come to life. Here, I share
-            everything from reflections on daily life to the projects I’m
-            working on. It’s messy, it’s real, and it’s constantly evolving,
-            just like my desk. Grab a coffee, make yourself comfortable, and
-            dive into the randomness. There's always something new to explore!
-          </span>
+          <div className="h-16"></div>
         </div>
 
-        <div className="h-16"></div>
-      </div>
-
-      <div className="w-full text-right mx-auto">
-        <span>
-          <strong>ENJOY LIFE</strong>
-          <div className="h-2"></div>
+        <div className="w-full text-right mx-auto">
           <span>
-            YOU'LL BE <strong>DEAD</strong> SOON
+            <strong>ENJOY LIFE</strong>
+            <div className="h-2"></div>
+            <span>
+              YOU'LL BE <strong>DEAD</strong> SOON
+            </span>
           </span>
-        </span>
+        </div>
       </div>
-
       <div className="h-16"></div>
       <div className="h-16"></div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-8 max-md:mx-4">
+      <div className="grid grid-cols-1 mx-4 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-8 lg:mx-0">
         {posts.length > 0 ? (
           posts.map((post, i) => (
             <PostCard
